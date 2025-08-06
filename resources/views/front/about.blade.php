@@ -52,12 +52,13 @@
 
         <!-- Logo with Tagline -->
         <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-            <img src="{{ asset('assets/images/logo.png') }}" alt="IIA Logo" height="40" class="me-2">
+            <img src="{{ asset('assets/img/logos.png') }}" alt="IIA Logo" height="40" class="me-2">
             <div class="d-flex flex-column lh-sm">
-                <strong class="text-white text-uppercase">IIA</strong>
-                <small class="text-white-50">Indus Industrial Accessories</small>
+
+
             </div>
         </a>
+
 
         <!-- Mobile Toggle -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"

@@ -113,10 +113,10 @@
 
         <!-- Logo with Tagline -->
         <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-            <img src="{{ asset('assets/images/logo.png') }}" alt="IIA Logo" height="40" class="me-2">
+            <img src="{{ asset('assets/img/logos.png') }}" alt="IIA Logo" height="40" class="me-2">
             <div class="d-flex flex-column lh-sm">
-                <strong class="text-white text-uppercase">IIA</strong>
-                <small class="text-white-50">Indus Industrial Accessories</small>
+
+
             </div>
         </a>
 
@@ -174,200 +174,135 @@
 
 
 
-<div class="cart-area pt-100">
+<div class="cart-area py-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-8 mx-auto">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
 
-                <div class="cart-table">
-                    <table class="table-bordered">
-                        <thead>
+                <!-- Cart Table -->
+                <div class="table-responsive mb-4">
+                    <table class="table table-bordered align-middle text-center">
+                        <thead class="table-dark">
                         <tr>
-                            <th scope="col">delete</th>
-                            <th scope="col">product</th>
-                            <th scope="col">title</th>
-                            <th scope="col">price</th>
-                            <th scope="col">avalability</th>
-                            <th scope="col">total</th>
+                            <th>Delete</th>
+                            <th>Product</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
+                            <td><a href="#" class="text-danger fw-bold">X</a></td>
+                            <td><img src="assets/img/cart/cart-1.jpg" alt="" class="img-fluid" width="60"></td>
+                            <td>Daisy Coffee Table</td>
+                            <td>$350.00</td>
                             <td>
-                                <div class="cart-del">
-                                    <a href="#">X</a>
-                                </div>
+                                <select class="form-select">
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                </select>
                             </td>
-                            <td>
-                                <div class="cart-img">
-                                    <img src="assets/img/cart/cart-1.jpg" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="cart-name">
-                                    <h4>
-                                        <a href="#">Daisy Coffee Table</a>
-                                    </h4>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="cart-price">
-                                    <span>$350.00</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="cart-select">
-                                    <select name="select" id="select">
-                                        <option value="">01</option>
-                                        <option value="">02</option>
-                                        <option value="">03</option>
-                                        <option value="">04</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="cart-price">
-                                    <span>$350.00</span>
-                                </div>
-                            </td>
+                            <td>$350.00</td>
                         </tr>
-
                         <tr>
+                            <td><a href="#" class="text-danger fw-bold">X</a></td>
+                            <td><img src="assets/img/cart/cart-2.jpg" alt="" class="img-fluid" width="60"></td>
+                            <td>Daisy Coffee Table</td>
+                            <td>$350.00</td>
                             <td>
-                                <div class="cart-del">
-                                    <a href="#">X</a>
-                                </div>
+                                <select class="form-select">
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                </select>
                             </td>
-                            <td>
-                                <div class="cart-img">
-                                    <img src="assets/img/cart/cart-2.jpg" alt="">
-                                </div>
-                            </td>
-                            <td>
-                                <div class="cart-name">
-                                    <h4>
-                                        <a href="#">Daisy Coffee Table</a>
-                                    </h4>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="cart-price">
-                                    <span>$350.00</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="cart-select">
-                                    <select name="select">
-                                        <option value="">01</option>
-                                        <option value="">02</option>
-                                        <option value="">03</option>
-                                        <option value="">04</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="cart-price">
-                                    <span>$350.00</span>
-                                </div>
-                            </td>
+                            <td>$350.00</td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
-                <!--  -->
-                <div class="row mt-20">
-                    <div class="col-xl-8 col-lg-8">
-                        <div class="coupon-left">
-                            <form action="#">
-                                <input type="text" placeholder="Coupon code">
-                                <button class="btn btn-type-3">apply coupon</button>
-                            </form>
-                        </div>
+
+                <!-- Coupon & Update -->
+                <div class="row mb-5">
+                    <div class="col-md-8">
+                        <form class="d-flex gap-2">
+                            <input type="text" class="form-control" placeholder="Coupon code">
+                            <button class="btn btn-primary">Apply Coupon</button>
+                        </form>
                     </div>
-                    <div class="col-xl-4 col-lg-4">
-                        <div class="update-cart text-left text-lg-right">
-                            <button class="btn btn-type-3">update cart</button>
-                        </div>
+                    <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                        <button class="btn btn-secondary">Update Cart</button>
                     </div>
                 </div>
-                <div class="row pt-100">
-                    <div class="col-xl-12 col-lg-12">
-                        <div class="cart-title mb-20">
-                            <h2>calculate shipping</h2>
-                        </div>
-                        <div class="mayabi-shiping-form-area">
-                            <div class="country-select">
-                                <select style="display: none;">
-                                    <option value="01">bangladesh</option>
-                                    <option value="01">algeria</option>
-                                    <option value="01">afghanistan</option>
-                                    <option value="01">ghana</option>
+
+                <!-- Shipping Area -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h5 class="mb-3">Calculate Shipping</h5>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <select class="form-select">
+                                    <option selected>Bangladesh</option>
+                                    <option>Algeria</option>
+                                    <option>Afghanistan</option>
+                                    <option>Ghana</option>
                                 </select>
-                                <div class="nice-select" tabindex="0"><span class="current">bangladesh</span>
-                                    <ul class="list">
-                                        <li data-value="01" class="option selected focus">bangladesh</li>
-                                        <li data-value="01" class="option">algeria</li>
-                                        <li data-value="01" class="option">afghanistan</li>
-                                        <li data-value="01" class="option">ghana</li>
-                                    </ul>
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <input class="form-control mt-20" type="text" name="name" placeholder="State / County">
-                    </div>
-                    <div class="col-md-6">
-                        <input class="form-control mt-20" type="text" name="zip" placeholder="Zip / Postal Code">
-                    </div>
-                    <div class="col-md-6">
-                        <input class="form-control mt-20" type="text" name="address" placeholder="Address Line 01">
-                    </div>
-                    <div class="col-md-6">
-                        <input class="form-control mt-20" type="text" name="address" placeholder="Address Line 02">
-                    </div>
-                    <div class="col-md-12">
-                        <div class="text-right mt-30">
-                            <button class="btn btn-type-3">update totals</button>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="State / County">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Zip / Postal Code">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Address Line 01">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Address Line 02">
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <button class="btn btn-info">Update Totals</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row pt-50">
-                    <div class="col-xl-12 col-lg-12">
-                        <div class="cart-title mb-20">
-                            <h2>Cart totals</h2>
-                        </div>
-                        <div class="cart-total-price">
-                            <div class="order-table table-responsive">
-                                <table>
-                                    <tbody>
-                                    <tr>
-                                        <td><strong>cart subtotal</strong></td>
-                                        <td> $168.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>shipping and handling</strong></td>
-                                        <td> free shipping</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>order total</strong></td>
-                                        <td>$168.00</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="text-right">
-                                <button class="btn btn-type-3">proceed to checkout</button>
-                            </div>
+                <!-- Cart Totals -->
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="mb-3">Cart Totals</h5>
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <th>Cart Subtotal</th>
+                                <td>$168.00</td>
+                            </tr>
+                            <tr>
+                                <th>Shipping and Handling</th>
+                                <td>Free Shipping</td>
+                            </tr>
+                            <tr>
+                                <th>Order Total</th>
+                                <td>$168.00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="text-end">
+                            <button class="btn btn-success">Proceed to Checkout</button>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-
     </div>
 </div>
+
 
 
 <footer class="bg-light text-dark pt-5 pb-4 mt-auto">
